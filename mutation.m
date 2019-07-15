@@ -3,10 +3,10 @@ function population = mutation( children )
     
     p_mut1 = 0.065;
     p_mut2 = 0.024;
-%     p_mut3 = 0.099; yani yol olasýlýðý
+%     p_mut3 = 0.099; yani yol olasÄ±lÄ±ÄŸÄ±
     
     % MUTATION 1
-    % Rastgele 2 þehiri yer deðiþtir
+    % Rastgele 2 ÅŸehri yer deÄŸiÅŸtir
     for i = 1 : length(children)
         child = children(i, :);
         len = length(child);
@@ -22,7 +22,7 @@ function population = mutation( children )
     end
     
     % MUTATION 2
-    %2 yolu birbiri ile deðiþtir
+    % 2 yolu birbiri ile deÄŸiÅŸtir
     for i = 1 : length(children)
         child = children(i, :);
         len = length(child);
