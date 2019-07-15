@@ -2,10 +2,10 @@ function childrens = crossover( parents )
     global POPULATION_N
     global POPULATION
     
-    pool = parents(randperm(size(parents,1)),:); % Karýþtýr
+    pool = parents(randperm(size(parents,1)),:); % KarÄ±ÅŸtÄ±r
     childrens = zeros(size(POPULATION));
     
-    % Genetik Deðiþim
+    % Genetik DeÄŸiÅŸim
     for i = 1 : 2 : POPULATION_N
         parent1 = pool(i, :);
         parent2 = pool(i + 1, :);
