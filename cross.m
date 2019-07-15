@@ -1,12 +1,12 @@
 function childrens = cross( parent1, parent2 )
    
-    % Geçiş noktası al
+    % GeÃ§iÅŸ noktasÄ± al
     child1  = zeros(size(parent1));
     child2  = zeros(size(parent2));
     
     point = randi([2, length(parent1) - 1]);
 
-    % İlk nokta genlerini koru
+    % Ä°lk nokta genlerini koru
     child1(:, 1:point) = parent1(:, 1:point);
     child2(:, 1:point) = parent2(:, 1:point);
 
@@ -22,8 +22,8 @@ function childrens = cross( parent1, parent2 )
     p1 = parent1;
     p2 = parent2;
     for j = 1 : point
-        % Değişimi ancak genler eşit değilse yapın
-        % çünkü öyleyse, kromozomda tekrarlanan şehirler üretecek
+        % DeÄŸiÅŸimi ancak genler eÅŸit deÄŸilse yapÄ±n
+        % Ã§Ã¼nkÃ¼ Ã¶yleyse, kromozomda tekrarlanan ÅŸehirler Ã¼retecek
         if p1(j) ~= p2(j)
             index = find(p1 == p2(j));
             p1(index) = p1(j);
